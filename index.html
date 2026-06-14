@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Свадьба Артёма и Екатерины — 30.07.2026</title>
+  <meta name="description" content="Онлайн-приглашение на свадьбу Артёма и Екатерины — 30 июля 2026 года" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-locked">
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-screen__decor" aria-hidden="true"></div>
+    <div class="intro-screen__card">
+      <p class="eyebrow">Wedding invitation</p>
+      <h1>Артём <span>&</span> Екатерина</h1>
+      <div class="line"></div>
+      <p class="date">30 июля 2026</p>
+      <p class="intro-screen__text">С любовью приглашаем вас разделить с нами этот день</p>
+      <button class="button button--dark intro-open" id="openInvitation" type="button">Открыть приглашение</button>
+      <p class="intro-screen__hint">После нажатия включится музыка</p>
+    </div>
+  </div>
+  <header class="hero" id="top">
+    <div class="hero__overlay"></div>
+    <nav class="nav">
+      <a href="#top">Главная</a>
+      <a href="#program">Программа</a>
+      <a href="#details">Детали</a>
+      <a href="#map">Карта</a>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+
+    <div class="hero__content">
+      <p class="eyebrow">Wedding invitation</p>
+      <h1>Артём <span>&</span> Екатерина</h1>
+      <div class="line"></div>
+      <p class="date">30 июля 2026</p>
+      <p class="hero__text">
+        Дорогие родные и друзья! Мы счастливы пригласить вас разделить с нами
+        один из самых важных и красивых дней в нашей жизни.
+      </p>
+      <a class="button" href="#rsvp">Подтвердить присутствие</a>
+      <button class="music-button" id="musicToggle" type="button" aria-label="Включить музыку">♫ Включить музыку</button>
+      <audio id="weddingMusic" src="music.mp3" loop preload="auto"></audio>
+      <p class="hashtag">#все_только_начинается</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <div class="container narrow">
+        <p class="section__label">Приглашение</p>
+        <h2>В этот день мы станем семьёй</h2>
+        <p>
+          И нам очень хочется, чтобы рядом были самые близкие люди. Пусть этот день
+          будет наполнен светом, теплом, улыбками и красивыми воспоминаниями.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="section love-story" id="story">
+      <div class="container love-story__grid">
+        <div class="story-image">
+          <img src="images/rings-white-gold.jpg" alt="Обручальные кольца из белого золота">
+        </div>
+        <div>
+          <p class="section__label">Наша история</p>
+          <h2>Только начинается</h2>
+          <p>
+            Мы начинаем новую главу нашей жизни и будем счастливы, если вы станете частью этого дня —
+            тёплого, красивого и наполненного любовью.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section countdown-section">
+      <div class="container">
+        <p class="section__label">До свадьбы осталось</p>
+        <div class="countdown" id="countdown">
+          <div><span id="days">0</span><small>дней</small></div>
+          <div><span id="hours">0</span><small>часов</small></div>
+          <div><span id="minutes">0</span><small>минут</small></div>
+          <div><span id="seconds">0</span><small>секунд</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section program" id="program">
+      <div class="container">
+        <p class="section__label">Программа дня</p>
+        <h2>30 июля 2026 года</h2>
+        <div class="timeline">
+          <div class="timeline__item">
+            <span>13:00</span>
+            <div>
+              <h3>Сбор гостей</h3>
+              <p>Встречаемся, знакомимся, делаем первые фотографии и настраиваемся на праздник.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <span>14:00</span>
+            <div>
+              <h3>Свадебная церемония</h3>
+              <p>Самый трогательный момент дня — мы скажем друг другу «да».</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <span>16:30</span>
+            <div>
+              <h3>Праздничный банкет</h3>
+              <p>Ужин, поздравления, музыка, танцы и тёплый вечер в кругу близких.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details" id="details">
+      <div class="container">
+        <p class="section__label">Детали</p>
+        <h2>Важная информация для гостей</h2>
+        <div class="cards">
+          <article class="card card--wide">
+            <h3>Дресс-код</h3>
+            <p>Будем рады видеть вас в праздничных образах.</p>
+            <p>Для нашего праздника выбрана лёгкая летняя атмосфера, поэтому приветствуются элегантные и праздничные наряды.</p>
+            <p class="accent">С нетерпением ждём встречи с вами!</p>
+          </article>
+          <article class="card">
+            <h3>Дети</h3>
+            <p>Мы будем рады видеть вас вместе с детьми.</p>
+          </article>
+          <article class="card">
+            <h3>Подарки</h3>
+            <p>Ваше присутствие — большая радость для нас. Если вы захотите сделать подарок, предпочтителен подарок в конверте.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section photo-mood">
+      <div class="container">
+        <p class="section__label">Атмосфера</p>
+        <h2>Лето, любовь и близкие рядом</h2>
+        <div class="photo-grid">
+          <div class="photo-card"><span>30.07</span></div>
+          <div class="photo-card photo-card--tall"><span>А & Е</span></div>
+          <div class="photo-card"><span>Love</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map" id="map">
+      <div class="container">
+        <p class="section__label">Локация</p>
+        <h2>Московская область, Одинцово, Лесной городок</h2>
+        <p class="coords">Координаты: 55.632498, 37.208554</p>
+        <div class="map__actions">
+          <a class="button button--dark" target="_blank" rel="noopener" href="https://yandex.ru/maps/?ll=37.208554%2C55.632498&z=16&pt=37.208554%2C55.632498">Открыть в Яндекс.Картах</a>
+          <a class="button button--light" target="_blank" rel="noopener" href="https://www.google.com/maps?q=55.632498,37.208554">Открыть в Google Maps</a>
+        </div>
+        <div class="map__frame">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=37.208554%2C55.632498&z=16&pt=37.208554%2C55.632498" width="100%" height="420" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <div class="container narrow">
+        <p class="section__label">RSVP</p>
+        <h2>Подтвердите присутствие</h2>
+        <p>
+          Пожалуйста, сообщите нам о своём присутствии до <strong>21 июня 2026 года</strong>,
+          чтобы мы могли всё красиво и удобно организовать.
+        </p>
+        <form class="rsvp-form" id="rsvpForm">
+          <label>
+            Ваше имя
+            <input type="text" id="guestName" placeholder="Например, Анна Иванова" required>
+          </label>
+          <label>
+            Будете ли вы присутствовать?
+            <select id="guestAnswer" required>
+              <option value="С удовольствием буду ❤️">С удовольствием буду ❤️</option>
+              <option value="Буду с парой/семьёй">Буду с парой/семьёй</option>
+              <option value="Буду с детьми 👨‍👩‍👧‍👦">Буду с детьми 👨‍👩‍👧‍👦</option>
+              <option value="К сожалению, не смогу 😔">К сожалению, не смогу 😔</option>
+            </select>
+          </label>
+          <label>
+            Комментарий
+            <textarea id="guestComment" placeholder="Например, буду с ребёнком / есть пожелания по питанию"></textarea>
+          </label>
+          <button class="button button--dark" type="submit">Отправить ответ</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+        <p class="note">Ответ будет отправлен организаторам через EmailJS.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>С любовью, Артём и Екатерина</p>
+    <p class="hashtag">#все_только_начинается</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
